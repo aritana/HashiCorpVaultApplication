@@ -14,3 +14,5 @@ Primeiro, você precisa baixar a imagem do Vault do Docker Hub. Você pode fazer
 
 ```bash
 sudo docker pull hashicorp/vault:1.13.3
+
+#### sudo docker run --cap-add=IPC_LOCK -d --name=vault -e 'VAULT_DEV_ROOT_TOKEN_ID=myroot' -p 8200:8200 hashicorp/vault:1.13.3 
